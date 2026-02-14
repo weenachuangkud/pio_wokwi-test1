@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Mawin CK Channel",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -118.8,
+      "left": 99.8,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -34.45,
+      "left": 172.8,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "r1:1", "green", [ "v38.4", "h-134.4", "v-67.2" ] ],
+    [ "r1:2", "uno:2", "green", [ "v0" ] ],
+    [ "led1:C", "uno:GND.2", "green", [ "v28.8", "h182.8", "v259.2", "h-124.8" ] ]
+  ],
+  "dependencies": {}
+}
